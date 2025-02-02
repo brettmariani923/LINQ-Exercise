@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List <string> list = new List<string>() {"Zelda", "Pokemon", "Mario", "Animal Crossing", "StarFox"};
+
+            var order = list.OrderByDescending(x => x.Length);
+
+            foreach (var item in order)
+            Console.WriteLine(item);
         }
     }
 }
